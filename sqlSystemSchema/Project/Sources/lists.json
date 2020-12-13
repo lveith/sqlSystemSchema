@@ -1,0 +1,17 @@
+﻿{
+	"tabPagesStructureInfo": {
+		"editable": true,
+		"items": [
+			{
+				"text": "Tables & Fields",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "Views & Schemas",
+				"ref": 2,
+				"editable": true
+			}
+		]
+	}
+}
