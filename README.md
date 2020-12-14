@@ -1,5 +1,5 @@
 # sqlSystemSchema
-Just a component to display in a dialog all the infos from SQL-System-Schema.
+Just a 4D component to display in a dialog all the infos from SQL-System-Schema.
 
 Can used by Host 4DBinary or 4DProject as component to view infos from "SQL-System-Schema" of host-structure
 
