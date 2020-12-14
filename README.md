@@ -1,4 +1,4 @@
-![platform](https://img.shields.io/static/v1?label=platform&message=win-32%20|%20win-64&color=blue)
+![platform](https://img.shields.io/static/v1?label=platform&message=osx-64%20|%20win-64&color=blue)
 ![downloads](https://img.shields.io/github/downloads/lveith/sqlSystemSchema/total)
 
 # sqlSystemSchema
