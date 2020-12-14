@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 
 <!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
 
@@ -7,6 +7,8 @@ Description
 This file is created in the 4D folder at the first launch of the database.
 It automatically creates several macro commands that can be enriched or modified.
 You can also add all the macros required for your own development needs manually.
+
+version = 2 allows to use macro created at component level into host database
 
 List of default macro commands.
 
@@ -30,8 +32,12 @@ ________________________________________________________________________________
 
 <macros>
 
+<macro name="Open sqlSysSchema dialog" version="2">
+<text><method>startSqlSysSchema</method></text>
+</macro>
+
 <!-- Logical blocks -->
-<macro name="ForEach">
+<macro name="ForEach" version="2">
 <text>
 For each(<caret/>item;Expression;begin;end) Until (BooleanExpression)
 <selection/>
@@ -41,7 +47,7 @@ End for each
 
 
 <!-- Frequent database blocks -->
-<macro name="QueryLoopRecordNoSave">
+<macro name="QueryLoopRecordNoSave" version="2">
 <text>
 QUERY(<selection/>;<selection/>Name="a@";*)
 QUERY(<selection/>; | ;<selection/>Name="b@")
@@ -55,7 +61,7 @@ End while
 
 <!-- Useful blocks -->
 <!-- Replace "LV" by your own shortName or by <user_os/> or <user_4D/> -->
-<macro name="HeaderFooter">
+<macro name="HeaderFooter" version="2">
 <text><caret/>// PM: "<method_name/>" (new LV <date format="0"/>, <time format="0"/>)
 // $0 - C_TEXT - Result "Firstname LASTNAME"
 // $1 - C_TEXT - Firstname
@@ -82,7 +88,7 @@ $0:=$result
 </text>
 </macro>
 
-<macro name="HeaderOnly">
+<macro name="HeaderOnly" version="2">
 <text>// PM: "<method_name/>" (new LV <date format="0"/>, <time format="0"/>)
 // $0 - C_TEXT - Result "Firstname LASTNAME"
 // $1 - C_TEXT - Firstname
@@ -93,19 +99,19 @@ $0:=$result
 </text>
 </macro>
 
-<macro name="LastChanged">
+<macro name="LastChanged" version="2">
 <text>// Last change: LV <date format="0"/>, <time format="0"/></text>
 </macro>
 
-<macro name="DateTime">
+<macro name="DateTime" version="2">
 <text><date format="0"/>, <time format="0"/></text>
 </macro>
 
-<macro name="UserDateTime">
+<macro name="UserDateTime" version="2">
 <text>// LV <date format="0"/>, <time format="0"/></text>
 </macro>
 
-<macro name="UserDate">
+<macro name="UserDate" version="2">
 <text>// LV <date format="0"/></text>
 </macro>
 
