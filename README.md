@@ -1,3 +1,6 @@
+![platform](https://img.shields.io/static/v1?label=platform&message=win-32%20|%20win-64&color=blue)
+![downloads](https://img.shields.io/github/downloads/lveith/sqlSystemSchema/total)
+
 # sqlSystemSchema
 Just a 4D component to display in a dialog all the infos from SQL-System-Schema.
 
